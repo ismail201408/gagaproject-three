@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.shopSale{
+    color: white;
+    background-color:  #DB4444;
+    width: 1520px;
+    height: 50px;
+    justify-content: center;
+    padding: 14px;
+    display: flex;
+}
+.aaa{
+    margin-left: 10px;
+    color: white;
+}
+.homeMenu{
+    width: 1520px;
+    height: 70px;
+    border-bottom: solid gray 0.5px;
+}
+.h3amenu {
+    display: flex;
+    justify-content: center;
+    padding: 27px;
+    margin-right: 300px;
+}
+.menua{
+    margin-left: 20px;
+    color: black;
+    text-decoration: none;
+}
+.menua:hover{
+    margin-left: 20px;
+    color: black;
+    text-decoration:underline;
+}
+.menua1{
+    color: black;
+}
+.shopBtn{
+    background-color: #DB4444;
+    color: white;
+    width: 90px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 15px;
+    border: none;
+    padding-left: 28px;
+    text-decoration: none;
+}
+#search{
+ position: absolute;
+ left: 1140px;   
+ border: none;
+}
+#icon1{
+    position: absolute;
+    left: 1292px; 
+    transition: 1s;
+}
+#icon1:hover{
+    position: absolute;
+    left: 1292px;
+    transform: scale(2,2); 
+    transition: 1s;
+}
+#icon2{
+    position: absolute;
+    left: 1313px; 
+    transition: 1s;
+}
+#icon2:hover{
+    position: absolute;
+    left: 1313px;
+    transform: scale(2,2); 
+    transition: 1s;
+}
+#icon3{
+    position: absolute;
+    left: 1340px; 
+    transition: 1s;
+}
+#icon3:hover{
+    position: absolute;
+    left: 1340px;
+    transform: scale(2,2); 
+    transition: 1s;
+}
+.logBtn{
+    background-color:#DB4444 ;
+    color: white;
+    width: 80px;
+    height: 20px;
+    border-radius: 6px;
+    position: absolute;
+    left: 1437px;
+    top: 74px;
+    padding-left: 18px;
+    text-decoration: none;
+}
+#username11{
+    position: absolute;
+    left: 1364px;
+    font-weight: 600;
+}
+#myproduct{
+    background-color:#DB4444 ;
+    color: white;
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    margin-top: 40px;
+    margin-left: 30px;
+    border: none;
+    transition: 0.4s;
+}
+  #myproduct:active {
+    transform: scale(0.90); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+#myproduct:hover{
+    background-color:#DB4444 ;
+    color: white;
+    width: 150px;
+    height: 30px;
+    border-radius: 3px;
+    margin-top: 40px;
+    margin-left: 30px;
+    border: none;
+    transition: 0.4s;
+}
+h1{
+    font-size: 33px;
+    color: red;
+}
+li{
+    margin-top: 10px;
+    font-weight: 600;
+    margin-left: 5px;
+   list-style-type: none;
+}
+#user{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 785px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.p{
+    width: 600px;
+    height: 40px;
+}
