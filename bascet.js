@@ -20,33 +20,40 @@ for (let i = 0; i < localStorage.length; i++) {
             <td>${obj.price}</td>
             <td><input class="inp1" type="number" value="${obj.quantity || 1}" data-key="${key}"></td>
             <td class="sub">${obj.subtotal || obj.price}</td>
-            <td><button class="butt1" data-key="${key}">Удалить</button></td>
+            <td><button class="butt1" data-key="${key}" style="
+            background-color:#DB4444 ;
+    color: white;
+    width: 80px;
+    height: 20px;
+    border-radius: 6px;
+    padding-left: 5px; 
+    border: none;
+    text-decoration: none;">Удалить</button></td>
         `;
         tbody.appendChild(tr);
         totalSum += obj.subtotal || obj.price;
     }
 }
-
 updateTotalDisplays(totalSum);
 document.querySelectorAll(".inp1").forEach(inp => {
     inp.addEventListener("input", function() {
         let key = this.dataset.key;
         let item = localStorage.getItem(key);
         if (!item) return;
-
+        
         let obj = JSON.parse(item);
         if (!obj || !obj.price) return;
-
+        
         let newQuantity = parseInt(this.value) || 0;
         let newSubtotal = obj.price * newQuantity;
-
+        
         obj.quantity = newQuantity;
         obj.subtotal = newSubtotal;
-
+        
         localStorage.setItem(key, JSON.stringify(obj));
-
+        
         this.closest("tr").querySelector(".sub").innerText = newSubtotal;
-
+        
         recalculateTotals();
     });
 });
@@ -83,7 +90,6 @@ function updateTotalDisplays(sum) {
         totalValue.innerText = sum;
     }
 }
-
 function func3() {
     divTotal.style.display = "block";
 }

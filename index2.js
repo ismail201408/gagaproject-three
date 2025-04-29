@@ -28,4 +28,9 @@ function func2() {
 function func1() {
     window.location.href = "myaccaunt.html";
 }
+let shop = document.getElementsByClassName("shophtm")
+ function shopp() {
+     window.location.href = "shop.html"  
+ }
+
 // localStorage.clear()
