@@ -140,10 +140,11 @@ table button:hover {
     border-radius: 5px;
     font-family: sans-serif;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 840px;
-    left: 1100px;
+    position: fixed;
+    top: 410px;
+    left: 1170px;
     z-index: 99;
+   
   }
   
   .cart-total h2 {

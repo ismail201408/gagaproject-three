@@ -30,5 +30,24 @@ function func1() {
 }
 let sub = document.getElementById("sub")
 let tot = document.getElementById("tot")
-tot.innerHTML = localStorage.getItem("totalSum")
-sub.innerHTML = localStorage.getItem("totalSum")
+if(sub&&tot){
+    tot.innerHTML = localStorage.getItem("totalSum")
+   let a = sub.innerHTML = localStorage.getItem("totalSum")
+//    let a1 = localStorage.getItem("towar2")
+    function qqq() {
+        window.location.href = "index2.html";
+
+
+
+
+
+        for(let i = 0; i<=localStorage.length; i++){
+            if(localStorage.getItem(`towar1 ${i}`)) {
+                 localStorage.removeItem(`towar1 ${i}`);
+             
+             }
+         } 
+         alert(`ВСе с вашего счёта снилося ${a}`);    
+         }
+    
+        }

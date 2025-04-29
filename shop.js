@@ -105,7 +105,7 @@ function func2() {
                                                     })
                                                 } 
                                                 }
-                                                let images = document.getElementsByTagName("img")
+                                                let images = document.getElementsByTagName("img");
                                                 
                                                 for(let k = 0; k<images.length; k++){
                                                     images[k].addEventListener("click",()=>{

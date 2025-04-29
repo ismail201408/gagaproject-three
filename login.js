@@ -23,5 +23,5 @@ let a = document.getElementsByClassName("consub")[0]
             }
         }
  });
- 
+//  localStorage.clear()
 
