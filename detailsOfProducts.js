@@ -39,9 +39,30 @@ let numofElement = +localStorage.getItem("clickedElement");
 let obj = JSON.parse(localStorage.getItem(`tovvar ${numofElement}`));
 for (let i = 0; i < localStorage.length; i++) {
     if (!localStorage.key(i).search("towar2")) {
-        let obj1 = JSON.parse(localStorage.getItem(localStorage.key(i)));
-        num4.innerHTML = "⭐"+ obj1.rat;
+        num4.innerHTML =  obj.raiting;
     }}
 img.src = obj.img;
 num1.innerHTML = obj.name2;
 num2.innerHTML = obj.price + "$";
+let bascetBtn = document.getElementById("button");
+let customObj = {
+    img: "",
+    name2: "",
+    price: "",
+    raiting: "",
+    sub: "",
+}
+for(let i = 0; i<=bascetBtn.length; i++){
+   if(bascetBtn[i]) {
+    bascetBtn[i].addEventListener("click", () =>{
+        let img = document.getElementsByClassName("img1")[i];
+        let nameofCustom = document.getElementsByClassName("h11")[i];
+        let price = document.getElementsByClassName("p1")[i];
+        customObj.img = img.src;
+        customObj.name2 = nameofCustom.innerHTML;
+        customObj.price = price.innerHTML;
+        localStorage.setItem(`towar1 ${i}`,JSON.stringify(customObj))
+    
+    })
+} 
+}

@@ -32,11 +32,11 @@ function func2() {
                         let obj = JSON.parse(localStorage.getItem(localStorage.key(i)));
                         let tr = document.createElement("div");
                         tr.innerHTML = `
-                        <div class="product">
+                        <div class="product" id ="myForm">
                         <img src="${obj.img}" alt="" class="img1">
                         <h1 class="h11">${obj.name2}</h1>
                         <p class="p1">${obj.price}</p>
-                        <p class="p2">⭐${obj.rat}</p>
+                        <p class="p2">${obj.rat}</p>
                         <button class="button">Add to Basket</button>
                         </td> 
                         </div>
@@ -75,6 +75,7 @@ function func2() {
                                         
                                         .product img{
                                             height: 120px;
+                                            width: 150px;
                                             transition: 0.4s;
                                             /* padding-left: 25px ; */
                                             }
