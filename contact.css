@@ -231,124 +231,76 @@
     position: absolute;
     top: 620px;
 }
-.bla2 {
-    display: flex;
-    justify-content: space-around;
-    margin-right: 520px;
-}
-.bla1 h2 {
-    color: white;
-    margin-bottom: 30px;
-}
-.bla1 p {
-    color: #fff8f8;
-}
-.bla1 div div:first-child {
-    width: 250px;
-    margin-right: -230px;
-}
-.bla1 div div:nth-child(2) {
-    width: 350px;
-    margin-right: 50px;
-    position: absolute;
-    right: 1100px;
-}
-.bla1 div div:nth-child(3) input {
-    padding: 10px;
-    border-radius: 20px;
-    width: 450px;
-    margin-top: 20px;
-    outline: none;
-}
-.bla3 {
-    position: relative;
-    margin-right: 100px;
-}
-.bla1 button {
-    position: absolute;
-    right:  -195px;
-    top: 23px;
-    background-color: #FAB700;
-    border: none;
-    border-radius: 50%;
-    padding: 9px;
-    cursor: pointer;
+.footer {
+  background-color: #DB4444;
+  color: white;
+  font-family: sans-serif;
+  padding: 40px 20px 20px;
+  position: absolute;
+  width: 1521px;
+  top: 620px
 }
 
-#bla4 {
-    color: #FAB700;
-    margin-top: 15px;
-    font-size: 27px;
-    font-weight: 500;
-}
-.bla5 {
-    margin-top: 60px;
-    display: flex;
-    width: 85vw;
-    justify-content:space-between;
-
-}
-.bla5 span {
-    color: #FAB700;
-}
-.bla5 p{
-    margin-left: 250px;
-    margin-top:30px;
-    color: rgb(135, 126, 126);
-}
-.bla6 i {
-    color: white;
-    padding: 10px;
-    margin: 5px;
-}
-.bla6{
-    position: absolute;
-    left: 1180px;
-    margin-top: -40px;
-}
-.a12{
-    width: 350px;
-    margin-right: 50px;
-    position: absolute;
-    right: 370px;
-    margin-top: -190px;
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
 }
 
-.app-banner {
-    color: white;
-    text-align: center;
-    width: 330px;
-    padding: 0px 0px;
-    margin-top: -300px;
-    margin-left: 940px;
-  }
-  .app-banner h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  .app-banner p {
-    margin-bottom: 20px;
-    font-size: 14px;
-  }
-  .app-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-  .qr-code {
-    width: 100px;
-    height: 110px;
-  }
-.app{
-    margin-left: 80px;
-    width: 190px;
-    height: 50px;
-    margin-top: -60px;
+.footer-column {
+  flex: 1 1 180px;
+  min-width: 160px;
 }
-.app2{
-    width: 190px;
-    height: 50px;
+
+.footer-column h3, .footer-column h4 {
+  margin: 0 0 10px;
+}
+
+.subscribe-box {
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.subscribe-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.subscribe-box button {
+  background: none;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.app-download {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-buttons img {
+  width: 100px;
+}
+.social-icons span {
+  margin-right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 10px;
+  margin-top: 30px;
+  font-size: 14px;
 }
 #username11{
   position: absolute;
