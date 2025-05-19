@@ -1,11 +1,11 @@
-document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-});
 let b = document.getElementById("username11");
 let num = localStorage.getItem("num");
 let craw = JSON.parse(localStorage.getItem(`loginuser`));
 let craw1 = craw.username;
 let log1 = document.getElementsByClassName("logBtn")[0];
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+});
 if (localStorage.getItem(`loginuser`)) {
     b.innerHTML = craw1;
     log1.innerHTML = "Log out";

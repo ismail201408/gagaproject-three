@@ -154,7 +154,7 @@
     margin-bottom: 15px;
 }
 
-.add-to-cart-button {
+.add-to-cart-btn {
     background-color: #dc3545;
     color: white;
     border: none;
@@ -166,11 +166,11 @@
     margin-top: 40px;
 }
 
-.add-to-cart-button:active {
+.add-to-cart-btn:active {
     transform: scale(0.90);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
-  .add-to-cart-button:hover{
+  .add-to-cart-btn:hover{
     background-color: rgb(99, 99, 108);
     color: white;
     border: none;

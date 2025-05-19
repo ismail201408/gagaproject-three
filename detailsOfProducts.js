@@ -52,17 +52,15 @@ let customObj = {
     raiting: "",
     sub: "",
 }
-for(let i = 0; i<=bascetBtn.length; i++){
-   if(bascetBtn[i]) {
-    bascetBtn[i].addEventListener("click", () =>{
-        let img = document.getElementsByClassName("img1")[i];
-        let nameofCustom = document.getElementsByClassName("h11")[i];
-        let price = document.getElementsByClassName("p1")[i];
+   if(bascetBtn) {
+    bascetBtn.addEventListener("click", () =>{
+        let img = document.getElementsByClassName("img1");
+        let nameofCustom = document.getElementsByClassName("h11");
+        let price = document.getElementsByClassName("p1");
         customObj.img = img.src;
         customObj.name2 = nameofCustom.innerHTML;
         customObj.price = price.innerHTML;
-        localStorage.setItem(`towar1 ${i}`,JSON.stringify(customObj))
+        localStorage.setItem(`towar1 `,JSON.stringify(customObj))
     
     })
 } 
-}
